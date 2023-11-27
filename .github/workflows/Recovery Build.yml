@@ -120,7 +120,7 @@ jobs:
       run: |
         source build/envsetup.sh
         export ALLOW_MISSING_DEPENDENCIES=true
-        lunch $MAKEFILE_NAME-eng && make clean && make $BUILD_TARGETimage -j$(nproc --all)
+        lunch $MAKEFILE_NAME-eng && make clean && make ${BUILD_TARGET}image -j$(nproc --all)
       working-directory: ${{ steps.pwd.outputs.workspace-folder }}
 
     - name: Upload to Release
