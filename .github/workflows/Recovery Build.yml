@@ -1,4 +1,4 @@
-name: Recovery Build (Legacy)
+name: Recovery Build
 
 on:
   workflow_dispatch:
@@ -14,7 +14,7 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: ${{ github.repositoryUrl }}
+        default: 'https://github.com/Marco-cefetmg/android_device_samsung_gtanotexllte.git'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
