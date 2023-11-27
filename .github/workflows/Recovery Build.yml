@@ -23,7 +23,7 @@ jobs:
     - name: Display Run Parameters
       run: |
         echo "::group::User Environment Variables"
-        echo "Manifest URL: $MANIFEST_URL }}"
+        echo "Manifest URL: $MANIFEST_URL"
         echo "Manifest Branch: $MANIFEST_BRANCH"
         echo "Device Tree URL: $DEVICE_TREE_URL"
         echo "Device Tree Branch: $DEVICE_TREE_BRANCH"
