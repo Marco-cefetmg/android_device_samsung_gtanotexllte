@@ -74,6 +74,7 @@ jobs:
         echo "workspace-folder=$(pwd)" >> $GITHUB_OUTPUT
         git config --global user.name "azwhikaru"
         git config --global user.email "azwhikaru+37921907@github.com"
+        git config --global url."https://".insteadOf git://
         repo init --depth=1 -u $MANIFEST_URL -b $MANIFEST_BRANCH
       id: pwd
           
