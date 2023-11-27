@@ -127,14 +127,14 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         files: | 
-          workspace/out/target/product/$DEVICE_NAME/$BUILD_TARGET.img
-          workspace/out/target/product/$DEVICE_NAME/*.zip
-          workspace/out/target/product/$DEVICE_NAME/*vendor*.img
-        name: $DEVICE_NAME-${{ github.run_id }}
+          workspace/out/target/product/${{ env.DEVICE_NAME }}/${{ env.BUILD_TARGET }}.img
+          workspace/out/target/product/${{ env.DEVICE_NAME }}/*.zip
+          workspace/out/target/product/${{ env.DEVICE_NAME }}/*vendor*.img
+        name: ${{ env.DEVICE_NAME }}-${{ github.run_id }}
         tag_name: ${{ github.run_id }}
         body: |
-          Manifest: $MANIFEST_BRANCH
-          Device: $DEVICE_NAME
-          Target: $BUILD_TARGET.img
+          Manifest: ${{ env.MANIFEST_BRANCH }}
+          Device: ${{ env.DEVICE_NAME }}
+          Target: ${{ env.BUILD_TARGET }}.img
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
