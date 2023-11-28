@@ -27,6 +27,9 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
+# Display
+TARGET_SCREEN_DENSITY := 200
+
 # Kernel
 TARGET_USES_UNCOMPRESSED_KERNEL := true
 #TARGET_KERNEL_SOURCE := kernel/samsung/universal7870
@@ -87,7 +90,8 @@ TW_INCLUDE_CRYPTO := true
 #TARGET_HW_DISK_ENCRYPTION := true
 
 # Asian region languages
-TW_EXTRA_LANGUAGES := true
+#TW_EXTRA_LANGUAGES := true
+TW_EXTRA_LANGUAGES := false
 
 # Debug flags
 TWRP_INCLUDE_LOGCAT := true
