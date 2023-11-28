@@ -8,7 +8,4 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/omni_gtanotexllte.mk
 
-COMMON_LUNCH_CHOICES := \
-    omni_gtanotexllte-user \
-    omni_gtanotexllte-userdebug \
-    omni_gtanotexllte-eng
+COMMON_LUNCH_CHOICES := omni_gtanotexllte-eng

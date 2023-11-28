@@ -14,6 +14,11 @@ $(call inherit-product, vendor/omni/config/common.mk)
 # Inherit from gtanotexllte device
 $(call inherit-product, device/samsung/gtanotexllte/device.mk)
 
+
+PRODUCT_PACKAGES += \
+	charger_res_images \
+	charger
+
 PRODUCT_DEVICE := gtanotexllte
 PRODUCT_NAME := omni_gtanotexllte
 PRODUCT_BRAND := samsung
