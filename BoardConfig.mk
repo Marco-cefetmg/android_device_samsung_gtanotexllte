@@ -64,7 +64,8 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 # TWRP specific build flags
-TW_THEME := portrait_hdpi
+#TW_THEME := portrait_hdpi
+TW_THEME := portrait_mdpi
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_PIXEL_FORMAT := "ABGR_8888"
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/13600000.usb/13600000.dwc3/gadget/lun%d/file"
@@ -89,7 +90,7 @@ TW_INCLUDE_CRYPTO := true
 TW_EXTRA_LANGUAGES := true
 
 # Debug flags
-#TWRP_INCLUDE_LOGCAT := true
+TWRP_INCLUDE_LOGCAT := true
 
 # Init properties from bootloader version, ex. model info
 TARGET_UNIFIED_DEVICE := true
