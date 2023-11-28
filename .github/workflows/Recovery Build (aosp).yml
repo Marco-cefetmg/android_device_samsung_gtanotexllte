@@ -1,15 +1,15 @@
-name: Recovery Build
+name: Recovery Build (AOSP)
 
 on:
   workflow_dispatch:
 env:
-  MANIFEST_URL: 'https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni'
+  MANIFEST_URL: 'https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp'
   MANIFEST_BRANCH: 'twrp-8.1'
   DEVICE_TREE_URL: ${{ github.repositoryUrl }}
   DEVICE_TREE_BRANCH: ${{ github.ref_name }}
   DEVICE_PATH: 'device/samsung/gtanotexllte'
   DEVICE_NAME: 'gtanotexllte'
-  MAKEFILE_NAME: 'omni_gtanotexllte'
+  MAKEFILE_NAME: 'twrp_gtanotexllte'
   BUILD_TARGET: 'recovery'
 
 
